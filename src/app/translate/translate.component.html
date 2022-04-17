@@ -1,0 +1,16 @@
+<div class="d-flex w-100 p-4 translate-app-container">
+  <div class="d-flex flex-row w-100">
+    <div class="user-entered-text-container w-50 rounded-start rounded-5">
+      <app-select-language class="d-flex justify-content-start w-100"></app-select-language>
+      <div class="p-2 w-100 h-100">
+        <textarea matInput class="p-2 w-100 h-75" (keydown)="translate($event)"></textarea>
+      </div>
+    </div>
+    <div class="translated-text-container w-50 rounded-end rounded-5">
+      <app-select-language class="d-flex justify-content-end w-100"></app-select-language>
+      <div class="p-2 w-100 h-100">
+        <textarea matInput class="p-2 w-100 h-75" ></textarea>
+      </div>
+    </div>
+  </div>
+</div>
